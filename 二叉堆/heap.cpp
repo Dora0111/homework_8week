@@ -61,3 +61,16 @@ int DeleteMin(PriorityQueue H)
 	H->Elements[i] = LastElements;
 	return MinElements;
 }
+int main(void)
+{
+	PriorityQueue* H;
+	int a;
+	Initialize(11);
+	for(int i=0;i<11;i++)
+	{
+		scanf("%d",&a);
+		Insert(a, H);
+	}
+	DeleteMin(H);
+	return 0; 
+} 
